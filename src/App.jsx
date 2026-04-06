@@ -93,7 +93,7 @@ function App() {
         {cards.map((card, index) => (
           <div
             key={card.id}
-            className={`card ${flipped.includes(index) || matched.includes(card.emoji) ? 'flipped' : ''} ${matched.includes(card.emoji) ? 'matched' : ''}`}
+            className={`card ${flipped.includes(index) || matched.includes(card.emoji) ? 'flipped' : ''} ${matched.includes(card.emoji) ? 'matched' : ''} ${index === 3 ? 'highlighted-card' : ''}`}
             onClick={() => handleCardClick(index)}
           >
             {flipped.includes(index) || matched.includes(card.emoji) ? (

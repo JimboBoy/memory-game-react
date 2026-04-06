@@ -63,7 +63,11 @@ h1 {
   transition: all 0.3s ease;
   transform-style: preserve-3d;
   position: relative;
+}
+
+.highlighted-card {
   border: 3px solid #3b82f6;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
 }
 
 .card:hover {
